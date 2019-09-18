@@ -9,3 +9,4 @@ let mapleader=";"
 " differentiate them from 3rd-party libraries.
 runtime! config/**/*
 
+colorscheme nord

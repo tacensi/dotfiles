@@ -37,3 +37,12 @@
 [submodule "vim/bundle/nord-vim"]
 	path = vim/bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/pack/vendor/start/Spacegray"]
+	path = vim/pack/vendor/start/Spacegray
+	url = git://github.com/ajh17/Spacegray.vim
+[submodule "vim/pack/vendor/start/nord"]
+	path = vim/pack/vendor/start/nord
+	url = https://github.com/arcticicestudio/nord-vim.git

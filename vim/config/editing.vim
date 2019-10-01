@@ -15,8 +15,8 @@ set whichwrap+=<,>,h,l
 
 " Display extra white space
 set list listchars=tab:›·,nbsp:·,eol:¬,trail:☠,extends:»,precedes:«
-hi NonText ctermfg=8 guifg=#4a4a59
-hi SpecialKey ctermfg=8 guifg=#4a4a59
+hi NonText ctermfg=25 guifg=#4a4a59
+hi SpecialKey ctermfg=25 guifg=#4a4a59
 
 
 " wrap lines rather than make use of the horizontal scrolling

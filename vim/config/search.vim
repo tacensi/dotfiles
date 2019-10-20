@@ -11,3 +11,7 @@ set ignorecase
 
 " ...unless a capital letter is included, in which case it's assumed you  want case-sensitive search.
 set smartcase
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+

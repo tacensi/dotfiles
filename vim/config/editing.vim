@@ -42,3 +42,13 @@ set autoread
 " Set spell check on markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 
+set wildmenu            " visual autocomplete for command menu
+
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+" space open/closes folds
+nnoremap <space> za
+set foldmethod=indent   " fold based on indent level
+
+

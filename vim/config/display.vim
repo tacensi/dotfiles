@@ -19,6 +19,13 @@ set showcmd
 " Only one space after punctuation
 set nojoinspaces
 
+set lazyredraw          " redraw only when we need to.
+
+set showmatch           " highlight matching [{()}]
+
+" highlight last inserted text
+nnoremap gV `[v`]
+
 set encoding=utf-8 " Necessary to show unicode glyphs
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 

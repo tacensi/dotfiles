@@ -51,4 +51,5 @@ set foldnestmax=10      " 10 nested fold max
 nnoremap <space> za
 set foldmethod=indent   " fold based on indent level
 
+noremap <f6> :Codesniff<cr>
 

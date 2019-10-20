@@ -13,6 +13,8 @@ export ZSH="/home/tacensi/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="tacensi"
 
+# ABNT layout
+setxkbmap -model abnt2 -layout br -variant abnt2
 
 
 HISTFILE=~/.histfile

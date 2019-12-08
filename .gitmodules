@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-phpcs"]
 	path = vim/bundle/vim-phpcs
 	url = git@github.com:vsushkov/vim-phpcs.git
+[submodule "vim/bundle/vim-qa"]
+	path = vim/bundle/vim-qa
+	url = git@github.com:joonty/vim-phpqa.git

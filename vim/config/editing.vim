@@ -51,5 +51,9 @@ set foldnestmax=10      " 10 nested fold max
 nnoremap <space> za
 set foldmethod=indent   " fold based on indent level
 
-noremap <f6> :Codesniff<cr>
+let g:phpqa_codesniffer_args = "--standard=WordPress"
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
+
+noremap <f6> :Phpcs<cr>
 

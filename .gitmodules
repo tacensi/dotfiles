@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-qa"]
 	path = vim/bundle/vim-qa
 	url = git@github.com:joonty/vim-phpqa.git
+[submodule "vim/bundle/vim-afterglow"]
+	path = vim/bundle/vim-afterglow
+	url = git@github.com:danilo-augusto/vim-afterglow.git

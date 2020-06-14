@@ -4,6 +4,8 @@ export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.npm/bin:$PATH
 
+# Set a different custom folder to	OhMyZShell
+ZSH_CUSTOM=$HOME/.dotfiles/z/custom/;
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -17,6 +19,8 @@ case `uname` in
 		# commands for OS X go here
 		# Path to your oh-my-zsh installation.
 		export ZSH="/Users/thiagocensi/.oh-my-zsh"
+		# Canary Alias
+		alias canary="open -a Google\ Chrome\ Canary --args --disable-web-security --user-data-dir=$HOME/profile-folder-name"
 	;;
 	Linux)
 		# commands for Linux go here
@@ -83,4 +87,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
-alias canary="open -a Google\ Chrome\ Canary --args --disable-web-security --user-data-dir=$HOME/profile-folder-name"
+

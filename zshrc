@@ -4,8 +4,6 @@ export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.npm/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/tacensi/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -13,8 +11,21 @@ export ZSH="/home/tacensi/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="tacensi"
 
-# ABNT layout
-setxkbmap -model abnt2 -layout br -variant abnt2
+# System specific configuration
+case `uname` in
+	Darwin)
+		# commands for OS X go here
+		# Path to your oh-my-zsh installation.
+		export ZSH="/Users/thiagocensi/.oh-my-zsh"
+	;;
+	Linux)
+		# commands for Linux go here
+		# Path to your oh-my-zsh installation.
+		export ZSH="/home/tacensi/.oh-my-zsh"
+		# ABNT layout
+		setxkbmap -model abnt2 -layout br -variant abnt2
+	;;
+esac
 
 
 HISTFILE=~/.histfile
@@ -72,3 +83,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
+alias canary="open -a Google\ Chrome\ Canary --args --disable-web-security --user-data-dir=$HOME/profile-folder-name"

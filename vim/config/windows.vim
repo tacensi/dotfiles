@@ -8,4 +8,4 @@ set splitbelow
 set splitright
 
 " Always use vertical diffs
-set diffopt+=vertical
+" set diffopt+=vertical

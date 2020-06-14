@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-afterglow"]
 	path = vim/bundle/vim-afterglow
 	url = git@github.com:danilo-augusto/vim-afterglow.git
+[submodule "vim/bundle/handlebars"]
+	path = vim/bundle/handlebars
+	url = git://github.com/mustache/vim-mustache-handlebars.git

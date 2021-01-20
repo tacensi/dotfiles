@@ -3,8 +3,10 @@
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.npm/bin:$PATH
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
 
-# Set a different custom folder to	OhMyZShell
+# Set a different custom folder to OhMyZShell
 ZSH_CUSTOM=$HOME/.dotfiles/z/custom/;
 
 # Set name of the theme to load --- if set to "random", it will
@@ -49,9 +51,10 @@ HIST_STAMPS="yyyy/mm/dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  docker
   composer
+  docker
+  git
+  sublime
   yarn
   z
 )
@@ -88,3 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
 
+if [ -f ~/.dotfiles/z/zsh.command-not-found ]; then
+    . ~/.dotfiles/z/zsh.command-not-found
+fi
